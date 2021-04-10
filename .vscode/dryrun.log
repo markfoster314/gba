@@ -1,0 +1,18 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/mark/CS2110/hw08/hw08'
+cc -Wstrict-prototypes -Wold-style-definition  -I../shared   -c -o gba.o gba.c
+cc -Wstrict-prototypes -Wold-style-definition  -I../shared   -c -o font.o font.c
+cc -Wstrict-prototypes -Wold-style-definition  -I../shared   -c -o main.o main.c
+cc -Wstrict-prototypes -Wold-style-definition  -I../shared   -c -o images/garbage.o images/garbage.c
+make: Leaving directory '/home/mark/CS2110/hw08/hw08'
+ 
+Makefile:29: /opt/cs2110-tools/GBAVariables.mak: No such file or directory
+make: *** No rule to make target '/opt/cs2110-tools/GBAVariables.mak'.
+make: Failed to remake makefile '/opt/cs2110-tools/GBAVariables.mak'.
+make: *** No rule to make target 'crt0.o', needed by 'MarkGBAProgram.elf'.
+make: *** No rule to make target '/crtbegin.o', needed by 'MarkGBAProgram.elf'.
+make: *** No rule to make target '/crtend.o', needed by 'MarkGBAProgram.elf'.
+make: *** No rule to make target '/crti.o', needed by 'MarkGBAProgram.elf'.
+make: *** No rule to make target '/crtn.o', needed by 'MarkGBAProgram.elf'.
+make: *** No rule to make target 'libc_sbrk.o', needed by 'MarkGBAProgram.elf'.
+ 
